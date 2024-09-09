@@ -8,7 +8,7 @@ import joblib
 
 def train_model():
     # Load preprocessed data
-    df = pd.read_csv('../data/preprocessed_data.csv')
+    df = pd.read_csv('data/preprocessed_data.csv')
     
     # Prepare features and target
     X = df['processed_content']
@@ -31,7 +31,7 @@ def train_model():
     print(classification_report(y_test, y_pred))
     
     # Save the pipeline
-    joblib.dump(pipeline, 'models/classifier_pipeline.joblib')
+    joblib.dump(pipeline, 'src/models/classifier_pipeline.joblib')
 
 if __name__ == "__main__":
     train_model()

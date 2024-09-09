@@ -4,9 +4,9 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import string
 
-nltk.download('punkt_tab')
-nltk.download('punkt')
-nltk.download('stopwords')
+# nltk.download('punkt_tab')
+# nltk.download('punkt')
+# nltk.download('stopwords')
 
 def preprocess_text(text):
     # Convert to lowercase
@@ -30,13 +30,17 @@ def preprocess_data(file_path):
     return df
 
 # Preprocess emails and texts
-emails_df = preprocess_data('../data/dummy_emails.csv')
-texts_df = preprocess_data('../data/dummy_texts.csv')
+def preprocess_and_save():
+    emails_df = preprocess_data('./data/dummy_emails.csv')
+    texts_df = preprocess_data('./data/dummy_texts.csv')
 
-# Combine datasets
-combined_df = pd.concat([emails_df, texts_df], ignore_index=True)
+    # Combine datasets
+    combined_df = pd.concat([emails_df, texts_df], ignore_index=True)
 
-# Save preprocessed data
-combined_df.to_csv('../data/preprocessed_data.csv', index=False)
+    # Save preprocessed data
+    combined_df.to_csv('./data/preprocessed_data.csv', index=False)
 
-print("Data preprocessing completed.")
+    print("Data preprocessing completed.")
+
+if __name__ == "__main__":
+    preprocess_and_save()

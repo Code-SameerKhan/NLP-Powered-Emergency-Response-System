@@ -31,12 +31,16 @@ def generate_dummy_data(num_samples=1000):
     df = pd.DataFrame(data)
     return df
 
-# Generate dummy emails and texts
-emails_df = generate_dummy_data(800)
-texts_df = generate_dummy_data(200)
+def generate_and_save_data():
+    emails_df = generate_dummy_data(800)  # Default of 800 emails
+    texts_df = generate_dummy_data(200)   # Default of 200 texts
 
-# Save to CSV files
-emails_df.to_csv('../data/dummy_emails.csv', index=False)
-texts_df.to_csv('../data/dummy_texts.csv', index=False)
+    # Save the data to CSV
+    emails_df.to_csv('./data/dummy_emails.csv', index=False)
+    texts_df.to_csv('./data/dummy_texts.csv', index=False)
 
-print("Dummy data generated and saved to CSV files.")
+    print("Dummy data generated and saved to CSV files.")
+
+
+if __name__ == "__main__":
+    generate_and_save_data()

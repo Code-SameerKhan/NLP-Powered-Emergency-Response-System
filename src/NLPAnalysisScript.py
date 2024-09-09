@@ -5,7 +5,7 @@ from sklearn.decomposition import LatentDirichletAllocation
 
 def extract_insights():
     # Load preprocessed data
-    df = pd.read_csv('../data/preprocessed_data.csv')
+    df = pd.read_csv('data/preprocessed_data.csv')
     
     # Separate severe symptoms and medication side effects
     severe_symptoms = df[df['category'] == 'Emergency']['processed_content']

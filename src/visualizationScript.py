@@ -4,13 +4,13 @@ import seaborn as sns
 
 def create_visualizations():
     # Load preprocessed data
-    df = pd.read_csv('../data/preprocessed_data.csv')
+    df = pd.read_csv('data/preprocessed_data.csv')
     
     # Category distribution
     plt.figure(figsize=(10, 6))
     sns.countplot(x='category', data=df)
     plt.title('Distribution of Message Categories')
-    plt.savefig('../data/visualizations/category_distribution.png')
+    plt.savefig('data/visualizations/category_distribution.png')
     plt.close()
     
     # Message volume over time
@@ -25,7 +25,7 @@ def create_visualizations():
     plt.ylabel('Number of Messages')
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig('../data/visualizations/daily_volume.png')
+    plt.savefig('data/visualizations/daily_volume.png')
     plt.close()
     
     from wordcloud import WordCloud
@@ -38,7 +38,7 @@ def create_visualizations():
     plt.axis('off')
     plt.title('Word Cloud of Message Content')
     plt.tight_layout()
-    plt.savefig('../data/visualizations/wordcloud.png')
+    plt.savefig('data/visualizations/wordcloud.png')
     plt.close()
 
 if __name__ == "__main__":
