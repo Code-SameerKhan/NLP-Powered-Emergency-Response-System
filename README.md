@@ -111,6 +111,8 @@ TFIDF(cat, Doc 2) = 0.14 * 0.176 ≈ 0.025
 - **Doc 3:** 
 TFIDF(cat, Doc 3) = 0.2 * 0.176 ≈ 0.035
 
+<H1> TOP 10 IDENTIFIED KEYWORDS </H1>
+
 ![wordcloud](https://github.com/user-attachments/assets/80daff4a-f74e-4c77-81d1-1ad0b0c434c5)
 
 
