@@ -118,6 +118,7 @@ TFIDF(cat, Doc 3) = 0.2 * 0.176 ≈ 0.035
 <H1> CLASSIFICATTION USING MACHINE LEARNING </H1>
 **Using Random Forest**
 
+![RFModelImage](https://github.com/user-attachments/assets/4dfb2cdd-e9f1-4a92-a84a-d923c66d2f3c)
 
 
   After identification of content using NLP of the emails and text, we can further using classical ML models such as Random Forest. Due to RF being less prone to bias and overall robust classification model, a tree based approach to imbalance datasets is prefered.
