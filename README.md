@@ -115,7 +115,12 @@ TFIDF(cat, Doc 3) = 0.2 * 0.176 ≈ 0.035
 
 ![wordcloud](https://github.com/user-attachments/assets/80daff4a-f74e-4c77-81d1-1ad0b0c434c5)
 
+<H1> CLASSIFICATTION USING MACHINE LEARNING </H1>
+**Using Random Forest**
 
+
+
+  After identification of content using NLP of the emails and text, we can further using classical ML models such as Random Forest. Due to RF being less prone to bias and overall robust classification model, a tree based approach to imbalance datasets is prefered.
     
 3. Approach
   1. Script description
