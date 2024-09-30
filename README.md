@@ -115,17 +115,26 @@ TFIDF(cat, Doc 3) = 0.2 * 0.176 ≈ 0.035
 
 ![wordcloud](https://github.com/user-attachments/assets/80daff4a-f74e-4c77-81d1-1ad0b0c434c5)
 
-<H1> CLASSIFICATTION USING MACHINE LEARNING </H1>
+<H1> CLASSIFICATION USING MACHINE LEARNING </H1>
 **Using Random Forest**
 
-![RFModelImage](https://github.com/user-attachments/assets/4dfb2cdd-e9f1-4a92-a84a-d923c66d2f3c)
+![RFModelImage](https://github.com/user-attachments/assets/a594cf68-7f1a-413d-b241-20e2467f6cd1)
 
 
   After identification of content using NLP of the emails and text, we can further using classical ML models such as Random Forest. Due to RF being less prone to bias and overall robust classification model, a tree based approach to imbalance datasets is prefered.
     
-3. Approach
-  1. Script description
-  2. Results
-  3. Images
-4. Overall Result
-5. Future Plans
+<H1> FUTURE PLANS </H1>
+
+**Step 1: Create an interface for end user to interact with the tool**
+  A separate submission box where user can either post the query or ask for assistance or an integeration on existing portal where patients can login and get updates on their queries.
+
+**Step 2: Deploy on Cloud for optimum model scaling and resource allocation**
+  Instead of on premise solution handling, tool deployed on cloud services gives the flexibility both in terms of resources and server availability which would be independent from the on-premise services. It provides an extra layer of protection against physical damages that can occur on local server and gives on time response due better server availability.
+
+  # Built with
+  <code><img height="30" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"></code>
+  <code><img height="30" src="https://raw.githubusercontent.com/pandas-dev/pandas/761bceb77d44aa63b71dda43ca46e8fd4b9d7422/web/pandas/static/img/pandas.svg"></code>
+  <code><img height="30" src="https://matplotlib.org/_static/logo2.svg"></code>
+  <code><img height="30" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1280px-Scikit_learn_logo_small.svg.png"></code>
+  <code><img height="30" src="https://thumbs.dreamstime.com/b/ai-nlp-technology-vector-icon-filled-flat-sign-mobile-concept-web-design-natural-language-processing-glyph-symbol-logo-311045790.jpg"></code>
+
